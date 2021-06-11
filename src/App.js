@@ -1,3 +1,5 @@
+import React from 'react';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
 import './App.css';
 import Nav from './Components/Nav';
 import About from'./Components/About';
@@ -8,14 +10,18 @@ import Footer from './Components/Footer';
 
 function App() {
   return (
-    <div>
-      <Nav/>
-      <About/>
-      <Portfolio/>
-      <Contact/>
-      <Resume/>
-      <Footer/>
-    </div>
+    <Router>
+      <div>
+        <Nav/>
+          <div>
+            <Route exact path='/' component={About}/>
+            <Route exact path='/portfolio' component={Portfolio}/>
+            <Route exact path='/contact' component={Contact}/>
+            <Route exact path='/resume' component={Resume}/>
+          </div>
+        <Footer/>
+      </div>
+    </Router>
   );
 }
 
