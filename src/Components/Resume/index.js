@@ -1,13 +1,12 @@
 import React from 'react';
 
-import '../../index.css';
-
 const Resume = () => {
     return(
         <section>
             <h3 className="text-center fw-bold fs-2">Full-Stack Developer</h3>
             <div>
                 <h4 className="px-4 fw-bold">Summary of Qualifications</h4>
+                <hr className="mx-3"/>
                 <p className ="px-5">
                     Recent graduate of Davis Technical College Software Development program. 
                     Driven professional with proven record of building relationships, managing 
@@ -21,6 +20,7 @@ const Resume = () => {
 
             <div>
                 <h4 className="px-4 fw-bold" >Competencies</h4>
+                <hr className="mx-3"/>
                 <ul className ="px-5">
                     <li>Experience with object-oriented language Javascript</li>
                     <li>Familiar with web development using the MERN stack</li>
@@ -33,16 +33,19 @@ const Resume = () => {
 
             <div>
                 <h4 className="px-4 fw-bold">Education</h4>
+                <hr className="mx-3"/>
                 <div className ="px-5">
-                    <p>University of Utah Bootcamp<span>2020</span></p>
+                    <p className="fw-bold">University of Utah Bootcamp<span className="position-dates">2020</span></p>
                     <p><i>Software Development</i></p>
                 </div>
             </div>
 
             <div>
                 <h4 className="px-4 fw-bold">Experience</h4>
+                    <hr className="mx-3"/>
                 <div className ="px-5">
                     <h5 className="fw-bold">Signs.com<span className="work-dates">2019-Present</span></h5>
+                    <hr/>
                     <div className="px-3">
                         <p className="fw-bold"><i>Customer Experience Lead<span className="position-dates">2020-2021</span></i></p>
                         <p className="px-3">
@@ -62,6 +65,7 @@ const Resume = () => {
                 </div>
                 <div className ="px-5">
                     <h5 className ="fw-bold">El Matador<span className="work-dates">2009-2019</span></h5>
+                    <hr/>
                     <div className="px-3">
                         <p className="fw-bold"><i>Manager<span className="position-dates">2016-2019</span></i></p>
                         <p className="px-3">

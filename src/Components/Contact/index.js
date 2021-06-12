@@ -16,7 +16,7 @@ const Contact = () => {
             };
         } else {
             if (!e.target.value.length) {
-                setErrorMessage(`${e.target.name} is required`);
+                setErrorMessage(`A ${e.target.name} is required.`);
             } else {
                 setErrorMessage('');
             }
@@ -35,30 +35,31 @@ const Contact = () => {
 
     return(
         <section>
-            <h1>Contact Me</h1>
-            <form onSubmit={handleSubmit}>
+            <h1 className="fw-bold fs-2 pt-3 px-5">Contact Me:</h1>
+            <form className="px-5" onSubmit={handleSubmit}>
                 <div>
-                    <label htmlFor="name">Name:</label>
-                    <input type="text" name="name" defaultValue={name} onBlur={handleChange}></input>
+                    <label htmlFor="name" className="fw-bold">Name:</label>
+                    <input className="ml4" type="text" name="name" defaultValue={name} onBlur={handleChange}></input>
                 </div>
 
                 <div>
-                    <label htmlFor="email">Email:</label>
+                    <label htmlFor="email" className="fw-bold">Email:</label>
                     <input type="text" name="email" defaultValue={email} onBlur={handleChange}></input>
                 </div>
 
                 <div>
-                    <label htmlFor="message">Message:</label>
+                    <label htmlFor="message" className="fw-bold">Message:</label>
                     <textarea name="message" rows="5" defaultValue={message} onBlur={handleChange}></textarea>
                 </div>
+                <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
 
                 {errorMessage && (
                     <div>
-                        <p>{errorMessage}</p>
+                        <p className="error-text">{errorMessage}</p>
                     </div>
                 )}
 
-                <button type="submit">Submit</button>
+                <button type="submit" className="fw-bold">Submit</button>
             </form>
         </section>
     );
