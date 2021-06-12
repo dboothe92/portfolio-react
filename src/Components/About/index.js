@@ -4,7 +4,7 @@ const About = () => {
     return(
         <section>
             <h1>About Me</h1>
-            <img src=""></img>
+            <img src="" alt=""></img>
             <p>
                 Never thought I'd make it. Three days grade school, three days high school. 
                 Those were awkward. Three days college. I'm glad I took a day and hitchhiked 
