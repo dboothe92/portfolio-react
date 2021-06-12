@@ -3,9 +3,9 @@ import React from 'react';
 const Footer = () => {
     return(
         <footer>
-            <p>
-                This is my footer. This is where I will link to GitHub, LinkedIn and something else.
-            </p>
+            <a target="_blank" href="https://github.com/dboothe92">GitHub</a>
+            <a target="_blank" href="https://www.linkedin.com/in/danbraunbergerdeveloper/">LinkedIn</a>
+            <a target="_blank" href="https://stackoverflow.com/users/14945698/dan-boothe">Stack Overflow</a>
         </footer>
     );
 };
