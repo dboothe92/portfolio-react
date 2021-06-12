@@ -3,9 +3,14 @@ import React from 'react';
 const About = () => {
     return(
         <section>
-            <h1>About Me</h1>
-            <img src="" alt=""></img>
-            <p>
+            <h1 className="fw-bold text-center mt-3">About Me</h1>
+            <img 
+                className="my-4 mx-auto d-block"
+                height="200em"
+                src={require('../../assets/images/about/placeholder.png.png').default}
+                alt="placeholder of me"
+            />
+            <p className="mx-5">
                 Never thought I'd make it. Three days grade school, three days high school. 
                 Those were awkward. Three days college. I'm glad I took a day and hitchhiked 
                 around the hive. You did come back different.
