@@ -2,8 +2,8 @@ import React from 'react';
 
 const Footer = () => {
     return(
-        <footer className="fixed-bottom text-center mt-5 py-4 bg-secondary">
-            <a className="" target="_blank" rel="noreferrer" href="https://github.com/dboothe92">
+        <footer className="fixed-bottom text-center py-4 bg-secondary">
+            <a target="_blank" rel="noreferrer" href="https://github.com/dboothe92">
                 <img 
                     src={require('../../assets/images/footer/github-01.png').default} 
                     alt="GitHub Logo/Link" 
@@ -17,7 +17,7 @@ const Footer = () => {
                     height="50em"
                 />
             </a>
-            <a className="" target="_blank" rel="noreferrer" href="https://stackoverflow.com/users/14945698/dan-boothe">
+            <a target="_blank" rel="noreferrer" href="https://stackoverflow.com/users/14945698/dan-boothe">
                 <img
                     src={require('../../assets/images/footer/stackOverflow-01.png').default}
                     alt="Stacked Overflow Logo/Link"

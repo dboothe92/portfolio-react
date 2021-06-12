@@ -1,6 +1,9 @@
 import React from 'react';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
+
 import './App.css';
+import './index.css'
+
 import Nav from './Components/Nav';
 import About from'./Components/About';
 import Portfolio from './Components/Portfolio';
@@ -13,7 +16,7 @@ function App() {
     <Router>
       <div>
         <Nav/>
-          <div className="mb-5">
+          <div className="footer-padding">
             <Route exact path='/' component={About}/>
             <Route exact path='/portfolio' component={Portfolio}/>
             <Route exact path='/contact' component={Contact}/>

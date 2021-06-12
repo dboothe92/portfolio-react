@@ -10,5 +10,19 @@ code {
     monospace;
 }
 
+.footer-padding {
+  padding-bottom: 15em;
+  background-color: #6C757E;
+}
+
+.work-dates {
+  float: right;
+  padding-right: 10em;
+}
+
+.position-dates {
+  padding-left: 3em;
+}
+
 
 
