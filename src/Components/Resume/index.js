@@ -2,7 +2,7 @@ import React from 'react';
 
 const Resume = () => {
     return(
-        <section>
+        <section className="pt-3">
             <h3 className="text-center fw-bold fs-2">Full-Stack Developer</h3>
             <div>
                 <h4 className="px-4 fw-bold">Summary of Qualifications</h4>
