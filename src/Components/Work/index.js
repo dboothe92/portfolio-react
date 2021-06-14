@@ -3,22 +3,28 @@ import React, { useState } from 'react';
 const Work = () => {
     const [projects] = useState([
         {
-            name: "0"
+            name: "Snake the Game!",
+            github: "Game-Night"
         },
         {
-            name: "1"
+            name: "Weather Dashboard",
+            github: "weather-dashboard"
         },
         {
-            name: "2"
+            name: "Got Plants?",
+            githug: ""
         },
         {
-            name: "3"
+            name: "Work Day Scheduler",
+            github: "calendar-planner"
         },
         {
-            name: "4"
+            name: "Password generator",
+            github: "passwordGenerator"
         },
         {
-            name: "5"
+            name: "Social Network API",
+            github: "social-network-api"
         },
     ]);
 
@@ -28,13 +34,13 @@ const Work = () => {
             <div>
                 {projects.map((image, i) => {
                     return(
-                        <img
+                        <a  target="_blank" rel="noreferrer" href={`https://github.com/dboothe92/${image.github}`}><img
                             src={require(`../../assets/images/projects/${i}.png`).default}
                             alt={image.name}
                             key={image.name}
                             className="m-5"
                             height="300em"
-                        />
+                        /></a>
                     )
                 })}
             </div>      

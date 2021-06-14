@@ -2,7 +2,7 @@ import React from 'react';
 
 const Footer = () => {
     return(
-        <footer className="fixed-bottom text-center py-4 footer-color">
+        <footer className="fixed-bottom text-center py-4">
             <a target="_blank" rel="noreferrer" href="https://github.com/dboothe92">
                 <img 
                     src={require('../../assets/images/footer/github-01.png').default} 

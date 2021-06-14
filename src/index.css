@@ -2,7 +2,6 @@ body {
   margin: 0,;
   padding: 0;
   font-family: 'Oswald', sans-serif;
-  background-color: #a663cc
 }
 
 code {
@@ -10,18 +9,8 @@ code {
     monospace;
 }
 
-.footer-padding {
-  padding-bottom: 6em;
-  background-color: #b9faf8;
-}
-
-.work-dates {
-  float: right;
-  padding-right: 10em;
-}
-
-.position-dates {
-  padding-left: 3em;
+header {
+  background-color: black;
 }
 
 label {
@@ -46,23 +35,36 @@ button {
   margin-top: 2em;
 }
 
+footer{
+  background-color: black;
+}
+
+.work-dates {
+  float: right;
+  padding-right: 10em;
+}
+
+.position-dates {
+  padding-left: 3em;
+}
+
 .error-text {
   color:red;
   font-size:1.5em;
   margin-left:6.75em;
 }
 
-.hidden {
-  display: none;
-}
-
 .landing-text {
-  font-size: 5.5em;
-  padding-top: .3em;
+  font-size: 2em;
+  padding-top: 4.5em;
 }
 
-.footer-color {
-  background: #b9faf8;
+.header-text {
+  color:#D4AF37;
+}
+
+.bottom-spacing {
+  padding-bottom: 5em;
 }
 
 

@@ -12,7 +12,7 @@ const Resume = () => {
                     Driven professional with proven record of building relationships, managing 
                     projects, and coaching individuals to success. Adaptive leader with the 
                     ability to work independently or function highly as a member of a team. 
-                    Skilled with HTML, CSS, ASP.NET, Git, Java, JavaScript, C#, and C++. 
+                    Skilled with HTML, CSS, Javascript, and the MERN stack. 
                     Recognized for being level-headed while utilizing critical thinking and 
                     complex problem solving. Skilled at organization and attention to detail. 
                 </p>
@@ -49,10 +49,11 @@ const Resume = () => {
                     <div className="px-3">
                         <p className="fw-bold"><i>Customer Experience Lead<span className="position-dates">2020-2021</span></i></p>
                         <p className="px-3">
-                            Responsible for ensuring customer satisfaction. Work as a team and 
-                            individual to increase company revenue and rating. Responsible for 
-                            10% of department revenue in a team of 20 for 2 consecutive record 
-                            breaking months. 
+                            Responsible for ensuring complete customer satisfaction. Handled team
+                            audits to ensure the team was meeting stat minimums. Held weekly
+                            team meetings and monthly individual meetings to give and receive feedback.
+                            Fostered an environment of respect and acceptance. Created improvement
+                            plans when needed.
                         </p>
                         <p className="fw-bold"><i>Customer Experience Representative</i></p>
                         <p className="px-3">

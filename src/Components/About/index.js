@@ -2,7 +2,7 @@ import React from 'react';
 
 const About = () => {
     return(
-        <section>
+        <section className="pt-2">
             <img 
                 className="py-2 mx-auto d-block"
                 height="200em"
