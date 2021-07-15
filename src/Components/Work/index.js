@@ -12,7 +12,7 @@ const Work = () => {
         },
         {
             name: "Got Plants?",
-            githug: ""
+            github: ""
         },
         {
             name: "Work Day Scheduler",

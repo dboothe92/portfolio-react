@@ -16,7 +16,7 @@ function App() {
     <Router>
       <div>
         <Nav/>
-          <div className="bottom-spacing">
+          <div>
             <Route exact path='/' component={Home}/>
             <Route exact path='/about' component={About}/>
             <Route exact path='/work' component={Work}/>

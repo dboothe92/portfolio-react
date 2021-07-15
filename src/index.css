@@ -9,64 +9,95 @@ code {
     monospace;
 }
 
-header {
-  background-color: black;
+/*Mobile Style*/
+.nav {
+  margin-top: 3vh;
+  display: flex;
+  justify-content: center;
 }
 
-label {
-  width:10em;
-  clear:left;
-  text-align:right;
-  padding-right:1em;
-  line-height:3em;
+.nav-link {
+  color: #000000;
+  width: 50%;
+  text-align: center;
+  font-size: 10vw;
 }
 
-textarea, input{
-  width:30em;
-  margin-top: .75em;
+.landing {
+  text-align: center;
+  margin-top: 10vh;
 }
 
-input, label, textarea {
-  float:left;
+.landing h1{
+  font-size: 8vh;
 }
 
-button {
-  margin-left:10em;
-  margin-top: 2em;
+.landing p {
+  font-size: 1.75vh;
 }
 
-footer{
-  background-color: black;
+.footer {
+  width: 100%;
+  text-align: center;
+  margin-top: 45vh;
 }
 
-.work-dates {
-  float: right;
-  padding-right: 10em;
+.footer img {
+  height: 7vh;
 }
 
-.position-dates {
-  padding-left: 3em;
-}
-
-.error-text {
-  color:red;
-  font-size:1.5em;
-  margin-left:6.75em;
-}
-
-.landing-text {
-  font-size: 2em;
-  padding-top: 4.5em;
-}
-
-.header-text {
-  color:#D4AF37;
-}
-
-.bottom-spacing {
-  padding-bottom: 5em;
+.footer a {
+  padding: 10vw;
 }
 
 
+@media only screen and (min-width: 768px) {
+  .nav-link {
+    color: #000000;
+    text-align: center;
+    font-size: 6vw;
+  }
+  
+  .landing h1{
+    font-size: 12vh;
+  }
+  
+  .landing p {
+    font-size: 2.5vh;
+  }
+
+  .footer {
+    margin-top: 37vh;
+  }
+
+  .footer a {
+    padding: 5vw;
+  }
+}
 
 
+@media only screen and (min-width: 992px) {
+  .nav {
+    margin-left: 60vw;
+  }
+  
+  .nav-link {
+    font-size: 2.5vh;
+    width: 17%;
+  }
+
+  .landing {
+    padding-top: 17vh;
+  }
+
+  .footer {
+    position: absolute;
+    bottom: 0;  
+  }
+
+  .footer img {
+    padding-left: 1vw;
+    display: block;
+    height: 5vh;
+  }
+}
