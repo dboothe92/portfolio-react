@@ -37,7 +37,6 @@ code {
 }
 
 .footer {
-  width: 100%;
   text-align: center;
   margin-top: 45vh;
 }
@@ -91,8 +90,7 @@ code {
   }
 
   .footer {
-    position: absolute;
-    bottom: 0;  
+    margin-top: 25vh;
   }
 
   .footer img {
