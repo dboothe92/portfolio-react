@@ -1,68 +1,49 @@
 import React, { useState } from 'react';
-import { validateEmail } from '../../utils/helpers';
 
 const Contact = () => {
-    const [contactState, setContactState] = useState({ name: '', email: '', message: '' });
-    const { name, email, message } = contactState;
-    const [errorMessage, setErrorMessage] = useState('');
+  const [status, setStatus] = useState("Submit");
+  const handleSubmit = async (e) => {
+    e.preventDefault();
 
-    function handleChange(e) {
-        if (e.target.name === 'email') {
-            const isValid = validateEmail(e.target.value);
-            if (!isValid) {
-                setErrorMessage('Your email is invalid');
-            } else {
-                setErrorMessage('');
-            };
-        } else {
-            if (!e.target.value.length) {
-                setErrorMessage(`A ${e.target.name} is required.`);
-            } else {
-                setErrorMessage('');
-            }
-        }
+    setStatus("Sending...");
 
-        setContactState({...contactState, [e.target.name]: e.target.value });
+    const { name, email, message } = e.target.elements;
+    let details = {
+      name: name.value,
+      email: email.value,
+      message: message.value,
+    };
 
-        if(!errorMessage) {
-            setContactState({ ...contactState, [e.target.name]: e.target.value });
-        }
-    }
+    let response = await fetch("http://localhost:5000/contact", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json;charset=utf-8",
+      },
+      body: JSON.stringify(details),
+    });
 
-    const handleSubmit = (e) => {
-        e.preventDefault();
-    }
+    setStatus("Submit");
+    let result = await response.json();
+    alert(result.status);
+  };
 
-    return(
-        <section>
-            <h1 className="fw-bold fs-2 pt-3 px-5">Contact Me:</h1>
-            <form className="px-5" onSubmit={handleSubmit}>
-                <div>
-                    <label htmlFor="name" className="fw-bold">Name:</label>
-                    <input className="ml4" type="text" name="name" defaultValue={name} onBlur={handleChange}></input>
-                </div>
-
-                <div>
-                    <label htmlFor="email" className="fw-bold">Email:</label>
-                    <input type="text" name="email" defaultValue={email} onBlur={handleChange}></input>
-                </div>
-
-                <div>
-                    <label htmlFor="message" className="fw-bold">Message:</label>
-                    <textarea name="message" rows="5" defaultValue={message} onBlur={handleChange}></textarea>
-                </div>
-                <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
-
-                {errorMessage && (
-                    <div>
-                        <p className="error-text">{errorMessage}</p>
-                    </div>
-                )}
-
-                <button type="submit" className="fw-bold">Submit</button>
-            </form>
-        </section>
-    );
+  return (
+    <form onSubmit={handleSubmit}>
+      <div>
+        <label htmlFor="name">Name:</label>
+        <input type="text" id="name" required />
+      </div>
+      <div>
+        <label htmlFor="email">Email:</label>
+        <input type="email" id="email" required />
+      </div>
+      <div>
+        <label htmlFor="message">Message:</label>
+        <textarea id="message" required />
+      </div>
+      <button type="submit" className='contact-button'>{status}</button>
+    </form>
+  );
 };
 
-export default Contact;
+  export default Contact;

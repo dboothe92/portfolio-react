@@ -5,7 +5,7 @@ const Home = () => {
         <section className="landing">
             <div>
                <h1>Dan Boothe</h1>
-               <p>['Javascript', 'MongoDB', 'Express', 'Node.js', 'React']</p>
+               <p>['Javascript', 'MongoDB', 'Express', 'React', 'Node.js']</p>
             </div>
         </section>
     );

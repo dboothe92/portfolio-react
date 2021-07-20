@@ -10,22 +10,26 @@ code {
 }
 
 /*Mobile Style*/
+/*Nav Bar*/
 .nav {
   margin-top: 3vh;
-  display: flex;
-  justify-content: center;
+  display: block;
 }
 
 .nav-link {
   color: #000000;
-  width: 50%;
   text-align: center;
-  font-size: 10vw;
+  font-size: 8vw;
+  font-weight: bold;
+  border-bottom: solid 1px #000000;
+  width: 80%;
+  margin: 0 auto;
 }
 
+/*Home Page*/
 .landing {
   text-align: center;
-  margin-top: 10vh;
+  margin-top: 6vh;
 }
 
 .landing h1{
@@ -36,27 +40,78 @@ code {
   font-size: 1.75vh;
 }
 
+/*Footer*/
 .footer {
   text-align: center;
-  margin-top: 45vh;
+  position: fixed;
+  height: 10vh;
+  clear: both;
+  bottom:0;
+  left:0;
+  right:0;
+  background-color: #ffffff;
 }
 
 .footer img {
-  height: 7vh;
+  height: 5vh;
 }
 
 .footer a {
   padding: 10vw;
 }
 
+/*Contact*/
+form {
+  margin-top: 5vh;
+
+}
+
+input, label {
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+}
+
+input, textarea {
+  width: 80%;
+  border: solid 1px #000000;
+}
+
+textarea {
+  display: block;
+  margin: 0 auto;
+  height: 15vh;
+}
+
+label {
+  font-size: 3.5vh;
+}
+
+.contact-button {
+  display: block;
+  margin: 2vh auto;
+  font-size: 3.5vh;
+  padding: 1vh;
+}
+
 
 @media only screen and (min-width: 768px) {
+  /*Nav Bar*/
+  .nav {
+    display: flex;
+    flex: flex-row;
+    
+  }
+
   .nav-link {
     color: #000000;
     text-align: center;
     font-size: 6vw;
+    border-bottom: none;
+    width: 50%
   }
   
+  /*Home Page*/
   .landing h1{
     font-size: 12vh;
   }
@@ -65,6 +120,7 @@ code {
     font-size: 2.5vh;
   }
 
+  /*Footer*/
   .footer {
     margin-top: 37vh;
   }
@@ -72,10 +128,20 @@ code {
   .footer a {
     padding: 5vw;
   }
+
+  /*Contact*/
+  input, textarea {
+    margin-bottom: 3vh;
+  }
+
+  input {
+    height: 5vh;
+  }
 }
 
 
 @media only screen and (min-width: 992px) {
+  /*Nav Bar*/
   .nav {
     margin-left: 60vw;
   }
@@ -85,17 +151,41 @@ code {
     width: 17%;
   }
 
+  /*Home Page*/
   .landing {
     padding-top: 17vh;
   }
 
+  /*Footer*/
   .footer {
-    margin-top: 25vh;
+    padding-bottom: 25vh;
+    padding-left: 1vw;
+    background: none;
   }
 
-  .footer img {
-    padding-left: 1vw;
+  .footer img{
     display: block;
-    height: 5vh;
+  }
+
+  /*Contact*/
+  form {
+    margin-left: 6vw;
+  }
+
+  label {
+    text-align: left;
+  }
+
+  input {
+    text-align: left;
+  }
+
+  input, textarea {
+    display: inline-block;
+    width: 50%;
+  }
+
+  .contact-button {
+    margin: 3vh 0 0 0;
   }
 }
