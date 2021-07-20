@@ -2,12 +2,12 @@ import React from 'react';
 
 const Resume = () => {
     return(
-        <section className="pt-3">
-            <h3 className="text-center fw-bold fs-2">Full-Stack Developer</h3>
+        <section className="resume">
+            <h3>Full-Stack Developer</h3>
             <div>
-                <h4 className="px-4 fw-bold">Summary of Qualifications</h4>
-                <hr className="mx-3"/>
-                <p className ="px-5">
+                <h4>Summary of Qualifications</h4>
+                <hr/>
+                <p>
                     Recent graduate of Davis Technical College Software Development program. 
                     Driven professional with proven record of building relationships, managing 
                     projects, and coaching individuals to success. Adaptive leader with the 
@@ -19,9 +19,9 @@ const Resume = () => {
             </div>
 
             <div>
-                <h4 className="px-4 fw-bold" >Competencies</h4>
-                <hr className="mx-3"/>
-                <ul className ="px-5">
+                <h4>Competencies</h4>
+                <hr/>
+                <ul>
                     <li>Experience with object-oriented language Javascript</li>
                     <li>Familiar with web development using the MERN stack</li>
                     <li>Able to work as member of a team on various software development-related projects</li>
@@ -32,31 +32,31 @@ const Resume = () => {
             </div>
 
             <div>
-                <h4 className="px-4 fw-bold">Education</h4>
-                <hr className="mx-3"/>
-                <div className ="px-5">
-                    <p className="fw-bold">University of Utah Bootcamp<span className="position-dates">2020</span></p>
-                    <p><i>Software Development</i></p>
+                <h4>Education</h4>
+                <hr/>
+                <div>
+                    <p><b>University of Utah Bootcamp 2021</b></p>
+                    <p className="experience-description"><i>Software Development</i></p>
                 </div>
             </div>
 
             <div>
-                <h4 className="px-4 fw-bold">Experience</h4>
-                    <hr className="mx-3"/>
-                <div className ="px-5">
-                    <h5 className="fw-bold">Signs.com<span className="work-dates">2019-Present</span></h5>
+                <h4>Experience</h4>
                     <hr/>
-                    <div className="px-3">
-                        <p className="fw-bold"><i>Customer Experience Lead<span className="position-dates">2020-2021</span></i></p>
-                        <p className="px-3">
+                <div>
+                    <h5>Signs.com <i>2019-Present</i></h5>
+                    <hr/>
+                    <div>
+                        <p className="experince-head"><i>Customer Experience Lead 2020-2021</i></p>
+                        <p className="experience-description">
                             Responsible for ensuring complete customer satisfaction. Handled team
                             audits to ensure the team was meeting stat minimums. Held weekly
                             team meetings and monthly individual meetings to give and receive feedback.
                             Fostered an environment of respect and acceptance. Created improvement
                             plans when needed.
                         </p>
-                        <p className="fw-bold"><i>Customer Experience Representative</i></p>
-                        <p className="px-3">
+                        <p className="experince-head"><i>Customer Experience Representative</i></p>
+                        <p className="experience-description">
                             Responsible for ensuring customer satisfaction. Work as a team and 
                             individual to increase company revenue and rating. Responsible for 
                             10% of department revenue in a team of 20 for 2 consecutive record 
@@ -64,12 +64,12 @@ const Resume = () => {
                         </p>
                     </div>
                 </div>
-                <div className ="px-5">
-                    <h5 className ="fw-bold">El Matador<span className="work-dates">2009-2019</span></h5>
+                <div>
+                    <h5>El Matador <i>2009-2019</i></h5>
                     <hr/>
-                    <div className="px-3">
-                        <p className="fw-bold"><i>Manager<span className="position-dates">2016-2019</span></i></p>
-                        <p className="px-3">
+                    <div>
+                        <p className="experince-head"><i>Manager 2016-2019</i></p>
+                        <p className="experience-description">
                             Handled all day to day operations. Fostered strong relationships with 
                             employees and customers. Worked with each department to create a focus 
                             of teamwork and service. Implemented more efficient policies to expedite 

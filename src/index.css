@@ -42,6 +42,7 @@ code {
 
 /*Footer*/
 .footer {
+  padding-top:2vh;
   text-align: center;
   position: fixed;
   height: 10vh;
@@ -49,6 +50,7 @@ code {
   bottom:0;
   left:0;
   right:0;
+  border-top: solid 2px #000000;
   background-color: #ffffff;
 }
 
@@ -92,6 +94,7 @@ label {
   margin: 2vh auto;
   font-size: 3.5vh;
   padding: 1vh;
+  background-color: #ffffff;
 }
 
 /*About*/
@@ -108,10 +111,72 @@ label {
   margin: 2vh auto;
 }
 
+.about img {
+  display: none;
+}
+
 .about p {
   margin: 0 7vw;
 }
 
+/*Resume*/
+.resume {
+  margin: 0 5vw 12vh 5vw;
+}
+
+.resume h3 {
+  font-size: 4vh;
+  text-align: center;
+  padding-top: 7vh;
+  padding-bottom: 3.5vh;
+}
+
+.resume h4 {
+  text-align: center;
+}
+
+.experince-head {
+  padding-left: 3vw;
+}
+
+.experience-description {
+  padding-left: 6vw;
+}
+
+/*Projects*/
+.projects {
+  margin-bottom: 12vh;
+}
+
+.projects h1 {
+  font-size: 5vh;
+  text-align: center;
+  padding-top: 3vh;
+  padding-bottom: 3.5vh;
+}
+
+.projects h2 {
+  text-align: center;
+  font-weight: bold;
+  border-bottom: solid 1px #000000;
+  border-top: solid 1px #000000;
+  width: 80%;
+  margin: 0 auto;
+  padding-bottom: 1vh;
+  padding-top: 1vh;
+}
+
+.projects a img {
+  height: 33vh;
+  display: block;
+  margin: 0 auto;
+  padding: 3vh 0;
+}
+
+.projects figcaption {
+  text-align: center;
+  margin-bottom: 8vh;
+}
 
 @media only screen and (min-width: 768px) {
   /*Nav Bar*/
@@ -155,6 +220,30 @@ label {
   input {
     height: 5vh;
   }
+
+  .about img {
+    display: block;
+    margin: 0 auto;
+    height: 20vh;
+    margin-top: 3vh;
+  }
+
+  /*Projects*/
+  .projects h1 {
+    font-size: 7vh;
+  }
+
+  .projects h2 {
+    font-size: 5vh;
+  }
+
+  .projects a img {
+    height: 45vh;
+  }
+
+  .projects figcaption {
+    font-size: 2.5vh;
+  }
 }
 
 
@@ -178,6 +267,7 @@ label {
   .footer {
     padding-bottom: 25vh;
     padding-left: 1vw;
+    border-top: none;
     background: none;
   }
 
@@ -205,5 +295,34 @@ label {
 
   .contact-button {
     margin: 3vh 0 0 0;
+  }
+
+  /*About*/
+  .about img {
+    height: 40vh;
+  }
+
+  /*Resume*/
+  .resume h3 {
+    font-size: 10vh;
+  }
+
+  .resume h4 {
+    text-align: left;
+    font-size: 7vh;
+  }
+
+  /*Projects*/
+  .projects {
+    margin-left: 12vw;
+  }
+
+  .projects h2 {
+    border: none;
+  }
+
+  .projects a img {
+    height: 50vh;
+  
   }
 }

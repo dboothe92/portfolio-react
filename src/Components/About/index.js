@@ -4,8 +4,6 @@ const About = () => {
     return(
         <section className="pt-2 about">
             <img 
-                className="py-2 mx-auto d-block"
-                height="200em"
                 src={require('../../assets/images/about/placeholder.png.png').default}
                 alt="placeholder of me"
             />
