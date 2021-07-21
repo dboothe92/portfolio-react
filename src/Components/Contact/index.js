@@ -14,7 +14,7 @@ const Contact = () => {
       message: message.value,
     };
 
-    let response = await fetch("http://localhost:3001/contact", {
+    let response = await fetch("http://localhost:3001/contact" || "https://young-hamlet-70214.herokuapp.com/contact", {
       method: "POST",
       headers: {
         "Content-Type": "application/json;charset=utf-8",

@@ -6,7 +6,7 @@ const Work = () => {
             name: "Snake the Game!",
             github: "Game-Night",
             description: "Description 1",
-            deployed: "https://github.com/dboothe92",
+            deployed: "https://dboothe92.github.io/Game-Night/",
             CTA: "Play Snake the Game!"
         },
         {
