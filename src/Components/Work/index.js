@@ -4,45 +4,37 @@ const Work = () => {
     const [projects] = useState([
         {
             name: "Snake the Game!",
-            github: "Game-Night",
-            description: "Description 1",
+            description: "A classic! Created using javascript and html this game will take you back to the nokia brick. This game includes classic options as well as a new updated mode to test your skills!",
             deployed: "https://dboothe92.github.io/Game-Night/",
-            CTA: "Play Snake the Game!"
+            CTA: "Play Snake the Game!",
+            repo: "https://github.com/dboothe92/Game-Night"
         },
         {
             name: "Weather Dashboard",
-            github: "weather-dashboard",
-            description: "Description 2",
-            deployed: "https://github.com/dboothe92",
-            CTA: "Play Snake the Game here!"
-        },
-        {
-            name: "Got Plants?",
-            github: "",
-            description: "Description 3",
-            deployed: "https://github.com/dboothe92",
-            CTA: "Play Snake the Game here!"
+            description: "Fun  with API's! Enter your city and this will 'fetch' you up your  current weather as well as a five day forecast. Hate typing? Good think this stores your recent searches so the weather is only a click away.",
+            deployed: "https://dboothe92.github.io/weather-dashboard/",
+            CTA: "Check your weather!",
+            repo: "https://github.com/dboothe92/weather-dashboard"
         },
         {
             name: "Work Day Scheduler",
-            github: "calendar-planner",
-            description: "Description 4",
-            deployed: "https://github.com/dboothe92",
-            CTA: "Play Snake the Game here!"
+            description: "Need help planning your day? This planner will give you an hour by hour planner to help you! It will allow you to save tasks and update you on where you should be. ",
+            deployed: "https://dboothe92.github.io/calendar-planner/",
+            CTA: "Start planning your day!",
+            repo: "https://github.com/dboothe92/calendar-planner"
         },
         {
             name: "Password generator",
-            github: "passwordGenerator",
-            description: "Description 5",
-            deployed: "https://github.com/dboothe92",
-            CTA: "Play Snake the Game here!"
+            description: "Remove the pain of thinking of a password. Just enter your password specifications and this will create your password for you!",
+            deployed: "https://dboothe92.github.io/passwordGenerator/",
+            CTA: "Create your new password",
+            repo: "https://github.com/dboothe92/passwordGenerator"
         },
         {
             name: "Social Network API",
-            github: "social-network-api",
-            description: "Description 6",
-            deployed: "https://github.com/dboothe92",
-            CTA: "Play Snake the Game here!"
+            description: "This is the backend for a social media site. Test it out using Isomnia Core! ",
+            deployed: "https://github.com/dboothe92/social-network-api",
+            repo: "https://github.com/dboothe92/social-network-api"
         },
     ]);
 
@@ -54,7 +46,7 @@ const Work = () => {
                     return(
                         <figure>
                             <h2>{image.name}</h2>
-                            <a target="_blank" rel="noreferrer" href={`https://github.com/dboothe92/${image.github}`}>
+                            <a target="_blank" rel="noreferrer" href={image.repo}>
                                 <img
                                     src={require(`../../assets/images/projects/${i}.png`).default}
                                     alt={image.name}
@@ -63,7 +55,8 @@ const Work = () => {
                             </a>
                             <figcaption>
                                    {image.description} <br/>
-                                   <a target="_blank" rel="noreferrer" href={image.deployed}>{image.CTA}</a>
+                                   <a target="_blank" rel="noreferrer" href={image.deployed}>{image.CTA}</a> <br/>
+                                   <a target="_blank" rel="norefferer" href={image.repo}>GitHub Repo</a>
                             </figcaption>
                         </figure>
                     )
