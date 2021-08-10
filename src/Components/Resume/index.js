@@ -7,8 +7,7 @@ const Resume = () => {
             <div>
                 <h4>Summary of Qualifications</h4>
                 <hr/>
-                <p>
-                    Recent graduate of Davis Technical College Software Development program. 
+                <p> 
                     Driven professional with proven record of building relationships, managing 
                     projects, and coaching individuals to success. Adaptive leader with the 
                     ability to work independently or function highly as a member of a team. 
@@ -58,9 +57,8 @@ const Resume = () => {
                         <p className="experince-head"><i>Customer Experience Representative</i></p>
                         <p className="experience-description">
                             Responsible for ensuring customer satisfaction. Work as a team and 
-                            individual to increase company revenue and rating. Responsible for 
-                            10% of department revenue in a team of 20 for 2 consecutive record 
-                            breaking months. 
+                            individual to increase company revenue and rating. Fostered relationships with
+                            clients to ensure complete satisfaction as well as ensure return business. 
                         </p>
                     </div>
                 </div>
