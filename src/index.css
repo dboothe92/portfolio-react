@@ -104,8 +104,7 @@ label {
 }
 
 .about h1 {
-  font-size: 4vh;
-  border-bottom: solid 1px #000000;
+  font-size: 4.5vh;
   width: 45%;
   text-align: center;
   margin: 2vh auto;
@@ -227,6 +226,10 @@ label {
     margin-top: 3vh;
   }
 
+  .about h1 {
+    font-size: 6vh;;
+  }
+
   /*Projects*/
   .projects h1 {
     font-size: 7vh;
@@ -300,6 +303,11 @@ label {
   /*About*/
   .about img {
     height: 40vh;
+  }
+
+  .about p {
+    width: 75%;
+    margin: 0 auto;
   }
 
   /*Resume*/

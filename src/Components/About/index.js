@@ -7,48 +7,21 @@ const About = () => {
                 src={require('../../assets/images/about/placeholder.png.png').default}
                 alt="placeholder of me"
             />
-            <h1>About Me</h1>
+            <h1>Hi! I'm Dan!</h1>
             <p>
-                Never thought I'd make it. Three days grade school, three days high school. 
-                Those were awkward. Three days college. I'm glad I took a day and hitchhiked 
-                around the hive. You did come back different.
-
-                Tonight we're talking to Barry Benson. Did you ever think, "I'm a kid from 
-                the hive. I can't do this"? Bees have never been afraid to change the world. 
-                What about Bee Columbus? Bee Gandhi? Bejesus? Where I'm from, we'd never sue 
-                humans. We were thinking of stickball or candy stores. 
-
-                How come you don't fly everywhere? It's exhausting. Why don't you run everywhere? 
-                It's faster. Yeah, OK, I see, I see. All right, your turn. TiVo. You can just 
-                freeze live TV? That's insane! You don't have that? We have Hivo, but it's a disease. 
-                It's a horrible, horrible disease.
-
-                Never thought I'd make it. Three days grade school, three days high school. 
-                Those were awkward. Three days college. I'm glad I took a day and hitchhiked 
-                around the hive. You did come back different.
-
-                Tonight we're talking to Barry Benson. Did you ever think, "I'm a kid from 
-                the hive. I can't do this"? Bees have never been afraid to change the world. 
-                What about Bee Columbus? Bee Gandhi? Bejesus? Where I'm from, we'd never sue 
-                humans. We were thinking of stickball or candy stores. 
-
-                How come you don't fly everywhere? It's exhausting. Why don't you run everywhere? 
-                It's faster. Yeah, OK, I see, I see. All right, your turn. TiVo. You can just 
-                freeze live TV? That's insane! You don't have that? We have Hivo, but it's a disease. 
-                It's a horrible, horrible disease.
-                Never thought I'd make it. Three days grade school, three days high school. 
-                Those were awkward. Three days college. I'm glad I took a day and hitchhiked 
-                around the hive. You did come back different.
-
-                Tonight we're talking to Barry Benson. Did you ever think, "I'm a kid from 
-                the hive. I can't do this"? Bees have never been afraid to change the world. 
-                What about Bee Columbus? Bee Gandhi? Bejesus? Where I'm from, we'd never sue 
-                humans. We were thinking of stickball or candy stores. 
-
-                How come you don't fly everywhere? It's exhausting. Why don't you run everywhere? 
-                It's faster. Yeah, OK, I see, I see. All right, your turn. TiVo. You can just 
-                freeze live TV? That's insane! You don't have that? We have Hivo, but it's a disease. 
-                It's a horrible, horrible disease.
+                I'm a full-stack developer specializing in the MERN stack. I'm a very goal oriented, creative, 
+                ambitious person with a passion for all things javascript, When I am not coding I enjoy creating 
+                art, playing Magic: The Gathering and brainstorming new maps, ideas, or situations for my latest 
+                Dungeons and Dragons campaign. 
+            </p>
+            <br/>
+            <p>
+                I currently work as a customer service representative but have recently completed the 
+                University of Utah Software Development bootcamp and am looking to transition into the 
+                development field. My current role has helped me refine and improve my organization and 
+                critical thinking skills and has taught me how to work with and lead a team. I believe 
+                these skills will compliment what I've learned about being a developer and will help 
+                with my career grow as a software developer. 
             </p>
         </section>
     );
