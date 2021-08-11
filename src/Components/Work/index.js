@@ -6,21 +6,21 @@ const Work = () => {
             name: "Snake the Game!",
             description: "A classic! Created using javascript and html this game will take you back to the nokia brick. This game includes classic options as well as a new updated mode to test your skills!",
             deployed: "https://dboothe92.github.io/Game-Night/",
-            CTA: "Play Snake the Game!",
+            CTA: "Play Snake the Game",
             repo: "https://github.com/dboothe92/Game-Night"
         },
         {
             name: "Weather Dashboard",
-            description: "Fun  with API's! Enter your city and this will 'fetch' you up your  current weather as well as a five day forecast. Hate typing? Good think this stores your recent searches so the weather is only a click away.",
+            description: "Fun  with API's! Enter your city and this will 'fetch' you up your  current weather as well as a five day forecast. Hate typing? Good thing this stores your recent searches so the weather is only a click away.",
             deployed: "https://dboothe92.github.io/weather-dashboard/",
-            CTA: "Check your weather!",
+            CTA: "Check your weather",
             repo: "https://github.com/dboothe92/weather-dashboard"
         },
         {
             name: "Work Day Scheduler",
             description: "Need help planning your day? This planner will give you an hour by hour planner to help you! It will allow you to save tasks and update you on where you should be. ",
             deployed: "https://dboothe92.github.io/calendar-planner/",
-            CTA: "Start planning your day!",
+            CTA: "Start planning your day",
             repo: "https://github.com/dboothe92/calendar-planner"
         },
         {
