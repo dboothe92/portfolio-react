@@ -1,7 +1,9 @@
 body {
   margin: 0,;
   padding: 0;
-  font-family: 'Oswald', sans-serif;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+  background-color: #000000;
+  color: #ffffff;
 }
 
 code {
@@ -17,7 +19,7 @@ code {
 }
 
 .nav-link {
-  color: #000000;
+  color: #ffffff;
   text-align: center;
   font-size: 8vw;
   font-weight: bold;
@@ -51,7 +53,7 @@ code {
   left:0;
   right:0;
   border-top: solid 2px #000000;
-  background-color: #ffffff;
+  background-color: #000000;
 }
 
 .footer img {
@@ -187,7 +189,6 @@ label {
   }
 
   .nav-link {
-    color: #000000;
     text-align: center;
     font-size: 6vw;
     border-bottom: none;
@@ -258,8 +259,11 @@ label {
   }
   
   .nav-link {
+    display: inline;
+    width: 25%;
     font-size: 2.5vh;
-    width: 17%;
+    padding-left: 0;
+    padding-right: 0;
   }
 
   /*Home Page*/

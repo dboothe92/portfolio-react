@@ -56,7 +56,7 @@ const Work = () => {
                             <figcaption>
                                    {image.description} <br/>
                                    <a target="_blank" rel="noreferrer" href={image.deployed}>{image.CTA}</a> <br/>
-                                   <a target="_blank" rel="norefferer" href={image.repo}>GitHub Repo</a>
+                                   <a target="_blank" rel="noreferrer" href={image.repo}>GitHub Repo</a>
                             </figcaption>
                         </figure>
                     )
